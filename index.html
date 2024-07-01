@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الحضور باستخدام QR</title>
+    <style>
+        #reader {
+            width: 100%;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #000;
+        }
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">تسجيل الحضور باستخدام QR</h1>
+    <div id="reader"></div>
+    <table>
+        <thead>
+            <tr>
+                <th>الاسم</th>
+                <th>وقت الحضور</th>
+            </tr>
+        </thead>
+        <tbody id="attendance-table">
+            <!-- سيتم إضافة الأسماء هنا -->
+        </tbody>
+    </table>
+    <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
